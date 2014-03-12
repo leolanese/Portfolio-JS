@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Jasmine WMS Spec Runner</title>
+    <script type="text/javascript" src="../../js/lib/jquery-1.10.2.min.js"></script>
+
+    <!-- jasmine stuff -->
+    <link rel="shortcut icon" type="image/png" href="lib/jasmine-1.2.0/jasmine_favicon.png">
+    <link rel="stylesheet" type="text/css" href="lib/jasmine-1.2.0/jasmine.css">
+    <script type="text/javascript" src="lib/jasmine-1.2.0/jasmine.js"></script>
+    <script type="text/javascript" src="lib/jasmine-1.2.0/jasmine-html.js"></script>
+
+    <!-- jasmine helpers -->
+    <script type="text/javascript" src="lib/helpers/sinon.js"></script>
+    <script type="text/javascript" src="lib/helpers/happen.js"></script>
+    <script type="text/javascript" src="lib/helpers/jasmine-jquery.js"></script>
+    <script type="text/javascript" src="lib/helpers/jasmineGrammar.js"></script>
+    <script type="text/javascript" src="lib/helpers/jasmine-jquery.js"></script>
+    <script type="text/javascript" src="lib/helpers/mock-ajax.js"></script>
+    <script type="text/javascript" src="lib/helpers/namespace.js"></script>
+    <script type="text/javascript" src="lib/helpers/specHelper.js"></script>
+
+    <!-- user agent sniffing -->
+    <script type="text/javascript" src="lib/ua.js"></script>
+
+    <!-- source spec files here -->
+    <script type="text/javascript" src="spec/wmsRunnerSpec.js"></script>
+    <script type="text/javascript" src="src/script.js"></script>
+    <link rel="stylesheet" href="\Css/nav.css">
+    <link rel="stylesheet" href="\Css/home.css">
+    <link rel="stylesheet" href="\Css/accordion.css">
+    <link rel="stylesheet" href="http://cloud.typography.com/6686252/636282/css/fonts.css" >
+
+    <!-- source src files to be tested -->
+    <script src="../../js/core.js"></script>
+    <script src="../../js/lib/idangerous.swiper-2.0.js"></script>
+    <script src="../../js/widthdetector.js"></script>
+    <script src="../../js/lib/yepnope.1.5.4-min.js"></script>
+    <script src="../../js/gridModule.js"></script>
+
+    <script type="text/javascript">
+        (function() {
+            var jasmineEnv = jasmine.getEnv();
+            jasmineEnv.updateInterval = 1000;
+
+            var htmlReporter = new jasmine.HtmlReporter();
+
+            jasmineEnv.addReporter(htmlReporter);
+
+            jasmineEnv.specFilter = function(spec) {
+                return htmlReporter.specFilter(spec);
+            };
+
+            var currentWindowOnload = window.onload;
+
+            window.onload = function() {
+                if (currentWindowOnload) {
+                    currentWindowOnload();
+                }
+                execJasmine();
+            };
+
+            function execJasmine() {
+                jasmineEnv.execute();
+            }
+
+        })();
+    </script>
+
+</head>
+
+<body>
+</body>
+</html>
