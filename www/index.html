@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html manifest="example.appcache">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -7,7 +7,7 @@
 
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <script src="./js/lib/respond.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
     <![endif]-->
 
     <script data-main="js/app" src="js/lib/require.js"></script>
@@ -19,6 +19,7 @@
     <meta name='@LeoLaneseltd'>
     <meta name='format-detection' content='telephone=yes'>
     <meta name='format-detection' content='address=yes'>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <!-- Favicon 32x32 png -->
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -176,7 +177,7 @@
 
                 <article>
                     <h3 class="icon icon-github" data-bind="click: githubBtn">Github (Public)</h3>
-                    <p data-bind="text: feed.social3"></p><a href="https://github.com/sirwilliam/" target="_blank">GitHub</a>
+                    <p data-bind="text: feed.social3"></p><a href="https://github.com/sirwilliam?tab=repositories" target="_blank">GitHub</a>
                 </article>
 
             </div>

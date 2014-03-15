@@ -31,30 +31,30 @@ define("one", ["knockout"], function(ko) {
 
             },
 
-            self.redirect = function(url){
-                // OOP encapsulation the functionality
-                window.location.href = url;
-            },
+                self.redirect = function(url){
+                    // OOP encapsulation the functionality
+                    window.location.href = url;
+                },
 
-            self.twitterBtn = function() {
-                var url = 'http://twitter.com/LeoLaneseltd/';
-                redirect(url);
-            },
+                self.twitterBtn = function() {
+                    var url = 'http://twitter.com/LeoLaneseltd/';
+                    redirect(url);
+                },
 
-            self.blogBtn = function() {
-                var url = 'http://leolanese.com/blog/';
-                redirect(url);
-            },
+                self.blogBtn = function() {
+                    var url = 'http://leolanese.com/blog/';
+                    redirect(url);
+                },
 
-            self.githubBtn = function() {
-                var url = 'https://github.com/sirwilliam/';
-                redirect(url);
-            },
+                self.githubBtn = function() {
+                    var url = 'https://github.com/sirwilliam?tab=repositories';
+                    redirect(url);
+                },
 
-            aug.init = function(){
-                var _this =  this;
-                _this.TasksViewModel();
-            }
+                aug.init = function(){
+                    var _this =  this;
+                    _this.TasksViewModel();
+                }
 
         }(PORT)) // Loose Augmentation
 

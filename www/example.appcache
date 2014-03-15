@@ -1,0 +1,19 @@
+CACHE MANIFEST
+# CACHE:, NETWORK:, or FALLBACK
+
+
+# Explicitly cached entries
+CACHE:
+/index.html
+./js/app.js
+./js/lib/knockout.mapping-latest.debug.js
+../json/portfolio.json
+
+# Resources that require the user to be online.
+NETWORK:
+*
+
+
+# offline.html will be displayed if the user is offline
+FALLBACK:
+#/ /offline.html
