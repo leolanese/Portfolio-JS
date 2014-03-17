@@ -12,6 +12,7 @@ module.exports = function(grunt) {
             jasmine: 'tests/jasmine/',
             root: '/Users/Leo/Documents/root/rcv',
             www: '/Users/Leo/Documents/root/rcv/www'
+
         },
 
         // debugging: grunt less:development
@@ -26,14 +27,15 @@ module.exports = function(grunt) {
                     sourceMap: true,
                     sourceMapFilename: 'css/main.css.map', // where file is generated and located
 
-                    sourceMapURL: '/rcv/css/main.css.map'
+                    sourceMapURL: '/rcv/css/main.css.map',
+                    sourceMapRootpath: '/rcv/'
                 },
 
                 files: {
                     // target.css file: source.less file
-                    '<%= meta.root  %>/css/devices.css': '<%= meta.root  %>/less/devices.less',
-                    '<%= meta.root  %>/css/core.css': '<%= meta.root  %>/less/core.less',
-                    '<%= meta.root  %>/css/portfolio.css': '<%= meta.root  %>/less/portfolio.less'
+                    '<%= meta.root  %>/css/devices.css': './less/devices.less',
+                    '<%= meta.root  %>/css/core.css': './less/core.less',
+                    '<%= meta.root  %>/css/portfolio.css': './less/portfolio.less'
                 }
             }
         },
@@ -57,7 +59,6 @@ module.exports = function(grunt) {
             }
         },
 
-
         watch: {
             // Watch for LESS changes, building CSS directly
             styles: {
@@ -73,16 +74,17 @@ module.exports = function(grunt) {
                 files: ['Gruntfile.js', 'server.js', '<%= meta.www  %>/**/*.js', '<%= meta.www  %>/tests/**/*.js'],
                 tasks: ['less::development', 'jshint']
             }
+
         }
 
     });
-
 
     // Load required modules
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-jasmine');
+
 
     // Task definitions
     grunt.registerTask('default', ['watch', 'jshint']);
