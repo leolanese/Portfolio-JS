@@ -32,7 +32,7 @@ define("one", ["knockout"], function(ko) {
                     window.location.href = url;
                 },
 
-                self.twitterBn = function() {
+                self.twitterBtn = function() {
                     var url = 'http://twitter.com/LeoLaneseltd/';
                     redirect(url);
                 },
@@ -50,6 +50,8 @@ define("one", ["knockout"], function(ko) {
                 ko.mapping.fromJSON(data, viewModel);
 
             },
+
+
 
             aug.init = function(){
                 var _this =  this;

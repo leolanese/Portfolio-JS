@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="my.appcache">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -51,7 +51,7 @@
 
     <div id="main" class="main">
 
-        <section >
+        <section>
             <div class="box">
                 <span class="icon icon-wrench">
                     <h2 data-bind="text: feed.t1"></h2>
@@ -166,17 +166,17 @@
 
                 <article>
                     <h2 data-bind="text: feed.social_h2"></h2>
-                    <h3 class="icon icon-twitter" data-bind="click: PORT.twitterBtn">Tweeter</h3>
+                    <h3 class="icon icon-twitter" data-bind="click: twitterBtn">Tweeter</h3>
                     <p data-bind="text: feed.social1"></p><a href="https://twitter.com/LeoLaneseltd/" target="_blank">@leolaneseltd</a>
                 </article>
 
                 <article>
-                    <h3 class="icon icon-notebook" data-bind="click: PORT.blogBtn()">Blog</h3>
+                    <h3 class="icon icon-notebook" data-bind="click: blogBtn">Blog</h3>
                     <p data-bind="text: feed.social2"></p> <a href="http://www.leolanese.com/blog/" target="_blank">Tech BLOG</a>
                 </article>
 
                 <article>
-                    <h3 class="icon icon-github" data-bind="click: PORT.githubBtn()">Github (Public)</h3>
+                    <h3 class="icon icon-github" data-bind="click: githubBtn">Github (Public)</h3>
                     <p data-bind="text: feed.social3"></p><a href="https://github.com/sirwilliam?tab=repositories" target="_blank">GitHub</a>
                 </article>
 
