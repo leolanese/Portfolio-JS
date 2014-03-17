@@ -57,6 +57,7 @@ module.exports = function(grunt) {
             }
         },
 
+
         watch: {
             // Watch for LESS changes, building CSS directly
             styles: {
@@ -70,9 +71,8 @@ module.exports = function(grunt) {
             // Watch for JS changes, linting the JS and copying direct to deployment directory.
             scripts: {
                 files: ['Gruntfile.js', 'server.js', '<%= meta.www  %>/**/*.js', '<%= meta.www  %>/tests/**/*.js'],
-                tasks: ['less::development' ]
+                tasks: ['less::development', 'jshint']
             }
-
         }
 
     });
@@ -86,6 +86,6 @@ module.exports = function(grunt) {
 
     // Task definitions
     grunt.registerTask('default', ['watch']);
- //   grunt.registerTask('default', ['jshint']);
+    grunt.registerTask('default', ['jshint']);
 
 };
