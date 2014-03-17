@@ -9,6 +9,7 @@ var PORT = (function(){
     // strict mode eliminates some JavaScript silent errors by changing them to throw errors
     // strict mode fixes mistakes that make it difficult for JavaScript engines to perform optimizations
     'use strict';
+
     var aug = {};
 
     // we want private members so we improving Singleton Pattern with a Module Pattern
@@ -27,6 +28,8 @@ var PORT = (function(){
             getName: function(){
                 return( this.me );
             }
+
+
 
         },
 

@@ -84,7 +84,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-jasmine');
 
-
     // Task definitions
     grunt.registerTask('default', ['watch', 'jshint']);
 

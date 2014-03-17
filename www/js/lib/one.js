@@ -27,16 +27,12 @@ define("one", ["knockout"], function(ko) {
                     }
                 );
 
-                ko.mapping.fromJSON(data, viewModel);
-
-            },
-
                 self.redirect = function(url){
                     // OOP encapsulation the functionality
                     window.location.href = url;
                 },
 
-                self.twitterBtn = function() {
+                self.twitterBn = function() {
                     var url = 'http://twitter.com/LeoLaneseltd/';
                     redirect(url);
                 },
@@ -51,10 +47,14 @@ define("one", ["knockout"], function(ko) {
                     redirect(url);
                 },
 
-                aug.init = function(){
-                    var _this =  this;
-                    _this.TasksViewModel();
-                }
+                ko.mapping.fromJSON(data, viewModel);
+
+            },
+
+            aug.init = function(){
+                var _this =  this;
+                _this.TasksViewModel();
+            }
 
         }(PORT)) // Loose Augmentation
 

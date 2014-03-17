@@ -15,7 +15,7 @@
     <title>Leo Lanese Web Developer</title>
 
     <meta name="description" content="Leo Lanese is a passion Web Developer. Mobile Consultant and strategist. Speaker.">
-    <meta name="keywords" content="javascript. HTML. CSS. Responsive Developer. RWD. Web Developer. Mobile Web. Responsive Web Design. Cross-browser. Cross-plattform. Agile. TDD/BDD.">
+    <meta name="keywords" content="javascript. HTML. CSS. Responsive Developer. RWD. Web Developer. Mobile Web. Responsive Web Design. Cross-browser. Cross-plattform. Agile. TDD/BDD. Technical Project Manager">
     <meta name='@LeoLaneseltd'>
     <meta name='format-detection' content='telephone=yes'>
     <meta name='format-detection' content='address=yes'>
@@ -166,17 +166,17 @@
 
                 <article>
                     <h2 data-bind="text: feed.social_h2"></h2>
-                    <h3 class="icon icon-twitter" data-bind="click: twitterBtn">Tweeter</h3>
+                    <h3 class="icon icon-twitter" data-bind="click: PORT.twitterBtn">Tweeter</h3>
                     <p data-bind="text: feed.social1"></p><a href="https://twitter.com/LeoLaneseltd/" target="_blank">@leolaneseltd</a>
                 </article>
 
                 <article>
-                    <h3 class="icon icon-notebook" data-bind="click: blogBtn">Blog</h3>
+                    <h3 class="icon icon-notebook" data-bind="click: PORT.blogBtn()">Blog</h3>
                     <p data-bind="text: feed.social2"></p> <a href="http://www.leolanese.com/blog/" target="_blank">Tech BLOG</a>
                 </article>
 
                 <article>
-                    <h3 class="icon icon-github" data-bind="click: githubBtn">Github (Public)</h3>
+                    <h3 class="icon icon-github" data-bind="click: PORT.githubBtn()">Github (Public)</h3>
                     <p data-bind="text: feed.social3"></p><a href="https://github.com/sirwilliam?tab=repositories" target="_blank">GitHub</a>
                 </article>
 
@@ -196,15 +196,11 @@
             <div class="content">
                 <h2 data-bind="text: feed.contact_h2"></h2>
                 <p data-bind="text: feed.contact"></p>
-
                 <a data-bind="text: feed.twitter,
                                   attr: {href: 'https://twitter.com/' + feed.twitter }" ></a>
-
                 <p data-bind="text: feed.txtemail"></p>
-
                 <a data-bind="text: feed.econtact,
                                   attr: {href: 'mailto:' + feed.econtact}" ></a>
-
             </div>
 
             <span class="bl-icon bl-icon-close"></span>
