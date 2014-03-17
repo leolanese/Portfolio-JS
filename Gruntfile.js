@@ -77,6 +77,7 @@ module.exports = function(grunt) {
 
     });
 
+
     // Load required modules
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -85,7 +86,6 @@ module.exports = function(grunt) {
 
 
     // Task definitions
-    grunt.registerTask('default', ['watch']);
-    grunt.registerTask('default', ['jshint']);
+    grunt.registerTask('default', ['watch', 'jshint']);
 
 };

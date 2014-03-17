@@ -84,22 +84,22 @@ a {
 }
 
 
-
 /* flexboxes */
 .box {
-    width: 100%;
-    min-height: 220px;
 
-    /* flexbox setup */
-    display: -webkit-box;
-    -webkit-box-orient: horizontal;
-    display: -moz-box;
-    -moz-box-orient: horizontal;
-    display: box;
-    box-orient: horizontal;
-}
+  width: 100%;
+  min-height: 220px;
 
-.box > div {
+  /* flexbox setup */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  display: box;
+  box-orient: horizontal;
+
+
+  &> div {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     box-flex: 1;
@@ -107,8 +107,9 @@ a {
     -o-transition: width 0.5s ease-out;
     -webkit-transition: width 0.5s ease-out;
     transition: width 0.5s ease-out;
-}
+  }
 
+}
 
 .content, .content a, div.panel-items {
 
