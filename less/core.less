@@ -1,4 +1,5 @@
 @import "./lib/based";
+@import "./lib/mixins";
 
 @font-face {
   font-family: 'Happy Monkey';
@@ -341,35 +342,35 @@ div.desc div span {
   -moz-animation-play-state:running;
 }
 
-#jumper div:first-child p{
+#jumper div:first-child p {
   font-size: 3em;
   letter-spacing:-2px;
   -webkit-animation-delay:.6s;
   -moz-animation-delay:.6s;
 }
 
-#jumper div:nth-child(2) p{
+#jumper div:nth-child(2) p {
   font-size: 2.8em;
   letter-spacing:-2px;
   -webkit-animation-delay:1s;
   -moz-animation-delay:1s;
 }
 
-#jumper div:nth-child(3) p{
+#jumper div:nth-child(3) p {
   font-size: 4.8em;
   letter-spacing:-2px;
   -webkit-animation-delay:1.4s;
   -moz-animation-delay:1.4s;
 }
 
-#jumper div:nth-child(4) p{
+#jumper div:nth-child(4) p {
   font-size: 6em;
   letter-spacing:-2px;
   -webkit-animation-delay:1.8s;
   -moz-animation-delay:1.8s;
 }
 
-#jumper div:nth-child(5) p{
+#jumper div:nth-child(5) p {
   font-size: 3.6em;
   -webkit-animation-delay:2.2s;
   -moz-animation-delay:2.2s;
@@ -378,6 +379,8 @@ div.desc div span {
 iframe {
   width: 100% !important;
 }
+
+
 
 
 .gradient {
@@ -390,11 +393,7 @@ iframe {
   margin-top: -300px;
   z-index: -2;
 
-  background-image: -webkit-gradient(radial, 0% 0%, 0% 100%, from(rgba(213,246,255,1)), to(rgba(213,246,255,0)));
-  background-image: -webkit-radial-gradient(50% 50%, 40% 40%, rgba(213,246,255,1), rgba(213,246,255,0));
-  background-image: -moz-radial-gradient(50% 50%, 50% 50%, rgba(213,246,255,1), rgba(213,246,255,0));
-  background-image: -ms-radial-gradient(50% 50%, 50% 50%, rgba(213,246,255,1), rgba(213,246,255,0));
-  background-image: -o-radial-gradient(50% 50%, 50% 50%, rgba(213,246,255,1), rgba(213,246,255,0));
+  .gradient(rgba(213,246,255,1), rgba(213,246,255,1), rgba(213,246,255,0));
 }
 
 
@@ -404,7 +403,7 @@ iframe {
 }
 
 .centre  {
-  background-image: url("\\portfolio/images/portfolio.svg");
+  background-image: url("/portfolio/images/portfolio.svg");
   background-repeat: no-repeat;
   background-position: 50px 15px;
   background-size: 40%;
@@ -936,6 +935,7 @@ section.bl-expand .content, section.bl-expand .bl-icon-close {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .icon {
   font-size: 15vmax;
   text-align: center;
@@ -966,113 +966,6 @@ section.bl-expand .content, section.bl-expand .bl-icon-close {
 .bl-icon-close:before {
   content: "\e608";
 }
-
-
-
-
-
-
-
-
-
-/* devices */
-#devices {
-  width:900px;
-  height:600px;
-  overflow:hidden;
-  margin:0 auto;
-  margin: 0 auto;
-  top: 10em;
-}
-
-#devices {
-
-  &> div {
-    display: inline-block;
-    margin: 1.6em;
-  }
-
-}
-
-
-
-
-
-#xxsmall {
-  height:69px;
-  width:35px;
-  background-color:#574e5b;
-  position:relative;
-}
-#block {
-  width:31px;
-  height:65px;
-  background-color:#646464;
-  position:relative;
-  top:2px;
-  left:2px;
-  border-radius:1px;
-}
-#mobile {
-  width:27px;
-  height:30px;
-  background-color: @screen;
-  position:relative;
-  top:2px;
-  left:2px;
-}
-#bouton {
-  width: 27px;
-  height: 10px;
-  background-color: rgb(87, 78, 91);
-  position: relative;
-  top: 4px;
-  left: 2px;
-}
-
-
-#xsmall {
-  width:54px;
-  height:99px;
-  background-color:#574e5b;
-  position:relative;
-  border-radius:5px;
-}
-#photoxsmall {
-  width:2px;
-  height:2px;
-  background-color:#fff;
-  position:relative;
-  top:7px;
-  left:19px;
-}
-#audioxsmall {
-  width:10px;
-  height:2px;
-  background-color:#fff;
-  position:relative;
-  top:5px;
-  left:22px;
-}
-#screenxsmall {
-  width:46px;
-  height:67px;
-  background-color: @screen;
-  position:relative;
-  top:12px;
-  left:4px;
-  border-radius:1px;
-}
-#boutonxsmall {
-  width: 5px;
-  height: 5px;
-  background-color: rgb(255, 255, 255);
-  position: relative;
-  top: 17px;
-  left: 23px;
-  border-radius: 10px;
-}
-
 
 
 
