@@ -33,7 +33,6 @@ module.exports = function(grunt) {
 
                 files: {
                     // target.css file: source.less file
-                    '<%= meta.root  %>/css/devices.css': './less/devices.less',
                     '<%= meta.root  %>/css/core.css': './less/core.less',
                     '<%= meta.root  %>/css/portfolio.css': './less/portfolio.less'
                 }

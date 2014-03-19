@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Leo Lanese Web Developer</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content=">
+    <meta name="@LeoLaneseltd">
+
+    <!-- basic row -->
+    <link rel="stylesheet" href="./css/core.css" >
+
+    <!-- portfolio grid -->
+    <link rel="stylesheet" href="./css/portfolio.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/knockout/3.0.0/knockout-min.js"></script>
+
+</head>
+
+<body>
+
+<!-- binding the viewModule
+<section data-bind="module: {name: 'one', data: { first: 'Leo' } } ">
+    <input data-bind="value: first" />
+</section>
+
+
+<section data-bind="module: { name: 'two', data: { first: 'Lelio', last: 'Lanese' } }">
+    <input data-bind="value: first" />
+    <input data-bind="value: last" />
+</section>
+-->
+
+
+
+<div>
+    <button data-bind="click: visible.bind($data, !visible())">Toggle</button>
+</div>
+<div style="width: 500px; height: 300px;">
+    <img style="width: 500px;" data-bind="slideUpDown: visible" src="http://knockoutjs.com/img/ko-logo.png" />
+    <img style="width: 500px;" data-bind="slideUpDown: !visible()" src="http://4.bp.blogspot.com/_Gkxrvtze9SA/S36o6zcsK6I/AAAAAAAAAvs/VmtcRcGhY_E/s320/Knockout+Punch.jpg" />
+</div>
+
+
+
+</body>
+</html>

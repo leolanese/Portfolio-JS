@@ -1,14 +1,6 @@
 @import "./lib/based";
 @import "./lib/mixins";
 
-@font-face {
-  font-family: 'Happy Monkey';
-  font-style: normal;
-  font-weight: 1400;
-  src: local('Happy Monkey'), local('HappyMonkey-Regular'),
-  url(http://themes.googleusercontent.com/static/fonts/happymonkey/v2/c2o0ps8nkBmaOYctqBq1raRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
-}
-
 body,   html {
   font-size: 100%;
   padding: 0;
@@ -175,13 +167,8 @@ div.panel-items {
       background: #3ba5db;
       z-index: 0;
       opacity: 0;
-      -webkit-transform: translateY(0);
-      -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
-      -moz-transform: translateY(0);
-      -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
-      transform: translateY(0);
-      transition: transform 0.5s ease-in-out, opacity 0s linear 0.5s;
-      -ms-transform: translateY(0);
+
+      .transform(0.5);
 
       p {
         padding: 0 15px 0 15px;
@@ -197,9 +184,9 @@ div.panel-items {
       top: 0px;
       margin-left: -108px;
       opacity: 0;
-      -webkit-transition: opacity 0.2s ease-in-out 0.5s;
-      -moz-transition: opacity 0.2s ease-in-out 0.5s;
-      transition: opacity 0.2s ease-in-out 0.5s;
+
+      .transition(0.2, ease-out);
+
     }
 
     nav span.bl-next-work {
@@ -233,24 +220,15 @@ div.panel-items > div.bl-show-work {
     z-index: 1000;
     opacity: 1;
     width: 20rem;
-    -webkit-transform: translateY(-100%);
-    -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    -moz-transform: translateY(-100%);
-    -moz-transition: -moz-transform 0.5s ease-in-out;
-    transform: translateY(-100%);
-    transition: transform 0.5s ease-in-out;
-    -ms-transform: translateY(-100%);
+
+   .transform(-100%);
 }
 
 div.panel-items > div.bl-hide-current-work {
     opacity: 0;
-    -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    -webkit-transform: translateY(-100%) scale(0.5);
-    -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    -moz-transform: translateY(-100%) scale(0.5);
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    transform: translateY(-100%) scale(0.5);
-    -ms-transform: translateY(-100%) scale(0.5);
+
+   .transition(0.5s, ease-out);
+
     z-index: 0;
 }
 
