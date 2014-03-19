@@ -1,12 +1,11 @@
 require.config({
-
     "baseUrl": "js/lib",
 
     paths: {
         "app": "../app",
 
         "jquery": ['//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min', './jquery-1.8.2.min'],
-        "knockout": "http://knockoutjs.com/downloads/knockout-2.2.1",
+        "knockout": "http://cdnjs.cloudflare.com/ajax/libs/knockout/3.0.0/knockout-min",
         'mapping': './knockout.mapping-latest.debug',
         "knockout-amd-helpers": "https://rawgithub.com/rniemeyer/knockout-amd-helpers/master/build/knockout-amd-helpers",
         "text": "https://rawgithub.com/rniemeyer/knockout-amd-helpers/master/ext/require/text",
