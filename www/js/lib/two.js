@@ -84,11 +84,11 @@ Port.prototype = PORT;
 // create a new clone like object
 var n = PORT.clone(PORT);
 var t1 = window.performance.now();
-console.log("Create clone object took: " + (t1 - t0) + " ms.");
-console.log('clone: ', n);
+//console.log("Create clone object took: " + (t1 - t0) + " ms.");
+//console.log('clone: ', n);
 
-console.log('General performance timing: ',  performance.timing)
+//console.log('General performance timing: ',  performance.timing)
 
-console.log(n.version.getName(), ' - Portfolio: ', n.version.getNum(),'v.');
+//console.log(n.version.getName(), ' - Portfolio: ', n.version.getNum(),'v.');
 
 
