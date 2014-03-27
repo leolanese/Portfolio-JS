@@ -62,10 +62,10 @@ define("two", ["knockout"], function(ko) {
 
 });
 
-var t0 = window.performance.now();
+//var t0 = window.performance.now();
 window.PORT.init();
-var t1 = window.performance.now();
-console.log("Call to init() took: " + (t1 - t0) + " ms.");
+//var t1 = window.performance.now();
+//console.log("Call to init() took: " + (t1 - t0) + " ms.");
 
 // not call it twice
 // window.PORT.init();
@@ -83,7 +83,7 @@ Port.prototype = PORT;
 // using Objects then
 // create a new clone like object
 var n = PORT.clone(PORT);
-var t1 = window.performance.now();
+//var t1 = window.performance.now();
 //console.log("Create clone object took: " + (t1 - t0) + " ms.");
 //console.log('clone: ', n);
 
