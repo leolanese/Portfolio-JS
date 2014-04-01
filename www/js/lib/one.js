@@ -32,31 +32,31 @@ define("one", ["knockout"], function(ko) {
                     window.location.href = url;
                 },
 
-                self.twitterBtn = function() {
-                    var url = 'http://twitter.com/LeoLaneseltd/';
-                    redirect(url);
-                },
+                    self.twitterBtn = function() {
+                        var url = 'http://twitter.com/LeoLaneseltd/';
+                        redirect(url);
+                    },
 
-                self.blogBtn = function() {
-                    var url = 'http://leolanese.com/blog/';
-                    redirect(url);
-                },
+                    self.blogBtn = function() {
+                        var url = 'http://leolanese.com/blog/';
+                        redirect(url);
+                    },
 
-                self.githubBtn = function() {
-                    var url = 'https://github.com/sirwilliam?tab=repositories';
-                    redirect(url);
-                },
+                    self.githubBtn = function() {
+                        var url = 'https://github.com/sirwilliam?tab=repositories';
+                        redirect(url);
+                    },
 
-                ko.mapping.fromJSON(data, viewModel);
+                    ko.mapping.fromJSON(data, viewModel);
 
             },
 
 
 
-            aug.init = function(){
-                var _this =  this;
-                _this.TasksViewModel();
-            }
+                aug.init = function(){
+                    var _this =  this;
+                    _this.TasksViewModel();
+                }
 
         }(PORT)) // Loose Augmentation
 
