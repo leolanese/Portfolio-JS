@@ -5,6 +5,14 @@ img {
   width: 150px;
 }
 
+* {
+  -webkit-transition: padding 0.3s ease-out;
+  -moz-transition: padding 0.3s ease-out;
+  -ms-transition: padding 0.3s ease-out;
+  -o-transition: padding 0.3s ease-out;
+  transition: padding 0.3s ease-out;
+}
+
 a {
   &:link { color: blue; }
   &:visited { color: purple; }
@@ -338,6 +346,7 @@ body:after { clear: both }
 
 p {
   margin-bottom: 0;
+  padding: 15px;
 }
 
 article {
@@ -523,8 +532,5 @@ h5 {
 h6 {
   font-size: 1em; /* 16 / 16 */
   line-height: 1.5em; /* 24 / 16 */
-  margin-bottom: 1.5em; /* 24 / 16 */
-}
-p, ul, ol, dl, blockquote {
   margin-bottom: 1.5em; /* 24 / 16 */
 }
