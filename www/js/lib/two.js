@@ -70,10 +70,6 @@ window.PORT.init();
 // not call it twice
 // window.PORT.init();
 
-function Port() {
-    // Constructor
-}
-//console.log(Port.prototype);
 
 var t0 = window.performance.now();
 // Using new portfolio() is not an option,
