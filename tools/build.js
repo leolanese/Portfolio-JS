@@ -10,10 +10,10 @@
     "mainConfigFile": "../www/js/app.js",
 
     "modules": [
-        //Optimize the application files. jQuery is not 
-        //included since it is listed as a network path in the main config file
-        {
-            "name": "app"
-        }
-    ]
+    //Optimize the application files. jQuery is not
+    //included since it is listed as a network path in the main config file
+    {
+        "name": "app"
+    }
+]
 }
