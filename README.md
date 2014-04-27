@@ -16,13 +16,13 @@ Leo Lanese, I build websites, London, UK<br>
 ─# My LAB<br>
 ──<a href="http://www.rwdlab.com">http://www.rwdlab.com</a><br>
 
-─My Activities:<br>
+─# My Activities:<br>
 ──<a href="www.beresponsive.co.uk">www.beresponsive.c.uk</a><br>
 
-─My Blog:<br>
+─# My Blog:<br>
 ──<a href="www.leolanese.com/blog">www.leolanese.com/blog</a><br>
 
-──# Twitter:<br>
+─# Twitter:<br>
 ──<a href="http://twitter.com/LeoLaneseltd">http://twitter.com/LeoLaneseltd</a><br>
 
 ─# Questions / Suggestion?<br>
