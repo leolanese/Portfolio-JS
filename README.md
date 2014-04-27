@@ -8,7 +8,7 @@ Using Knockout MVVM and Responsive Web Design.
 
 <br>
 -----
-@LeoLaneseLtd<br>
+Leo Lanese, I build websites, London, UK<br>
 
 ─# My Portfolio<br>
 ──<a href="http://www.leolanese.com">http://www.leolanese.com</a><br>
