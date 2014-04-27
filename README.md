@@ -5,7 +5,7 @@ Using Knockout MVVM and Responsive Web Design.
 
 ### Version: 0.5.67
 
-<pre style="font: 8px/4px monospace;">%%%??????!!!!!!!!eeeeeee*******oo*oooioiiiiiiiiiiiiiiii===================i=i=iooo*e!!!!!!e!!eee*e**
+<pre style="font: 4px/2px monospace;">%%%??????!!!!!!!!eeeeeee*******oo*oooioiiiiiiiiiiiiiiii===================i=i=iooo*e!!!!!!e!!eee*e**
 %%??????!!!!!!!!eeeeeee*******oooooooooiiiiiiiiiiiii=========================iiio$&&&&&&&&&&&#?*eee*
 %???????!!!!!!eeeeeeee******oooooooooiiiiiii=ii*??%$%?*i======+==++=++========ii*&@&@&&&&@@@&@O**e**
 ??????!!!!!!!!eeeeeeee*****ooooooiiiiiiiiiiiie%#&@@@@@&#$eo==++++++++++++======ie&&&&&&@&&&&&#O**e**
