@@ -26,4 +26,4 @@ Leo Lanese, I build websites, London, UK<br>
 ──<a href="http://twitter.com/LeoLaneseltd">http://twitter.com/LeoLaneseltd</a><br>
 
 ─# Questions / Suggestion?<br>
-── Follow me at: <a href="mail:to">developer@leolanese.com</a><br>
+── <a href="mail:to">developer@leolanese.com</a><br>
