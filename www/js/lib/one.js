@@ -22,7 +22,7 @@ define("one", ["knockout"], function(ko) {
 
                 var viewModel = {};
                 var data = $.getJSON(self.taskURI, function(data) {
-                        viewModel = ko.mapping.fromJSON(data, {}, data);
+                       // viewModel = ko.mapping.fromJSON(data, {}, data);
                         ko.applyBindings(viewModel);
                     }
                 );
@@ -45,7 +45,7 @@ define("one", ["knockout"], function(ko) {
                     self.githubBtn = function() {
                         var url = 'https://github.com/sirwilliam?tab=repositories';
                         redirect(url);
-                    },
+                    }
 
                     ko.mapping.fromJSON(data, viewModel);
 

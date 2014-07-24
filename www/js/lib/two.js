@@ -71,14 +71,14 @@ window.PORT.init();
 // window.PORT.init();
 
 
-var t0 = window.performance.now();
+//var t0 = window.performance.now();
 // Using new portfolio() is not an option,
 // since it isn't a constructor. Is an Object!
-Port.prototype = PORT;
+//Port.prototype = PORT;
 
 // using Objects then
 // create a new clone like object
-var n = PORT.clone(PORT);
+//var n = PORT.clone(PORT);
 //var t1 = window.performance.now();
 //console.log("Create clone object took: " + (t1 - t0) + " ms.");
 //console.log('clone: ', n);
